@@ -3,8 +3,11 @@ from pathlib import Path
 import os
 
 # get path of the script
-# scriptpath = Path(os.path.dirname(os.path.abspath(__file__)))
-scriptpath = Path('./colormaps')
+choice = 2
+if choice == 1:
+    scriptpath = Path(os.path.dirname(os.path.abspath(__file__)))
+elif choice == 2:
+    scriptpath = Path('./colormaps')
 
 ## Inputs:
 # Path to the CSV file
@@ -67,7 +70,7 @@ def makeColormapCST(listoflines, colormapname, colormappath='.'):
         floats.extend(n)
         floats.append(float(1))
 
-    initstring = 'Colour Map Colours = ' + ','.join(map(str, floats)) + '\n'
+    initstring = '  Colour Map Colours = ' + ','.join(map(str, floats)) + '\n'
 
     header = f'COLOUR MAP:{colormapname}\n'
     footer = '  Colour Map Divisions = 2\n  Colour Map Storage Type = Preferences\n  Colour Map Type = Gradient\nEND'
