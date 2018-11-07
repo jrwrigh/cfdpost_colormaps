@@ -11,7 +11,7 @@ Examples of the different colormap options are in [`Examples.md`](./Examples.md)
 
 I've also written up a simple Python script that will translate CSV's into the correct format for this process. It is commented with instructions.
 
-\*Note that the "Extended Black Body" colormap used to be posted on Kenneth's website. It is no longer there and is replaced by the "Inferno" colormap. The "Extended Black Body" and "Inferno" are not quite the same, with "Inferno" being more muted in it's color pallette which I personally don't like. I'm currently (2018-11-07) contacting Kenneth to get his comment on the matter.
+\*Note that the "Extended Black Body" colormap used to be posted on Kenneth's website (though it is still available on [GitHub](https://github.com/kennethmoreland-com/kennethmoreland-com.github.io/tree/master/color-advice)). After discussion with Kenneth over email, it was dropped in favor of "Inferno" as they're both very similar to each other, with "Inferno" being the more rigorously vetted option. That said, "Extended Black Body" isn't bad, just maybe not as good as "Inferno".
 
 ## Use:
 Simply import the `.cst` with the colormap of your liking to use it, or import `AllColormaps.cst` to get all of them. 
