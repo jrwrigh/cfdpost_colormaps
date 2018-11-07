@@ -5,8 +5,9 @@
 
 Here are tools that allow users to use different color maps in ANSYS CFD Post without having to enter then in manually or have them buried in a `.cst` file.
 
-
 The example colormaps are taken from [Kenneth Moreland's webpage](https://www.kennethmoreland.com/color-advice/) on color map advice*. These colormaps are generally recommended over the default ones available in CFD Post.
+
+Examples of the different colormap options are in [this imgur album](https://imgur.com/a/hL35KCY). This is an axisymmetric CFD simulation with flow going right to left. Notice the differences in the appearance of turbulence.
 
 I've also written up a simple Python script that will translate CSV's into the correct format for this process. It is commented with instructions.
 
