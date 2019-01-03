@@ -3,6 +3,32 @@
 #### Work with `.ccl`'s and `.cst`'s? Check out my VS Code Extension for Language Support, [ANSYS CFX](https://marketplace.visualstudio.com/items?itemName=u2berggeist.cfxlanguage)!
 [![Say Thanks!](https://img.shields.io/badge/Say-Thanks&#33;-orange.svg?longCache=true&style=flat-square)](https://saythanks.io/to/u2berggeist)
 
+## Why Colormaps?
+
+Because rainbow is bad. 
+
+To start, what are colormaps for? They're a visualization tool. They attempt to communicate a change in numerical value from a sample set by changing color. The "greater" the change in color, the greater the change in numerical value. 
+
+The rainbow is a linear scale of light wavelengths. *However*, how humans perceive a rainbow scale is **not** linear. In fact, the correlation between the perceived color change in a rainbow colormap and the actual numerical change is quite poor. 
+
+There are several instances where professionals have made incorrect conclusions from rainbow-based visualizations. Doctors have been found to make better diagnoses by using alternate colormaps:
+
+> In tests, diagnostic accuracy, as measured by the proportion of diseased areas identified, increased dramatically with the new color scheme. [Source](https://phys.org/news/2011-10-heart-disease-visualization-experts-simpler.html)
+
+and climate scientists have misinterpreted their own data by using rainbow colormaps:
+
+>  The same sub-tropical ‘front’ is apparent in rainbow, but far less clear in the sequential scheme.... [the sub-tropical 'front'] is a mirage, an artefact of the choice of colour scale. [Source](http://www.climate-lab-book.ac.uk/2016/why-rainbow-colour-scales-can-be-misleading/)
+
+See [this article](https://matplotlib.org/users/colormaps.html) from matplotlib that details more about the issues in colormaps. In particular, compare the plots of perceptually uniform colormaps and the more common colormaps from the same page (the lower plot in particular). These are plotted based on perceived brightness, so linear is the goal. As you can see, rainbow and the like are quite poor.
+
+![perceptually uniform colormaps](https://matplotlib.org/users/plotting/colormaps/lightness_00.png)
+
+![more common colormaps](images/misc_colormaps_from_matplotlib.png)
+
+Bottom line: don't use rainbow. \#endrainbow
+
+## Ok, so what is this repository?
+
 Here are tools that allow users to use different color maps in ANSYS CFD Post without having to enter then in manually or have them buried in a `.cst` file.
 
 The example colormaps are taken from [Kenneth Moreland's webpage](https://www.kennethmoreland.com/color-advice/) on color map advice*. These colormaps are generally recommended over the default ones available in CFD Post.
