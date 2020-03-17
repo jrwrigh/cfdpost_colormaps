@@ -21,7 +21,7 @@ and climate scientists have misinterpreted their own data by using rainbow color
 
 See [this article](https://matplotlib.org/users/colormaps.html) from matplotlib that details more about the issues in colormaps. In particular, compare the plots of perceptually uniform colormaps and the more common colormaps from the same page (the lower plot in particular). These are plotted based on perceived brightness, so linear is the goal. As you can see, rainbow and the like are quite poor.
 
-![perceptually uniform colormaps](https://matplotlib.org/users/plotting/colormaps/lightness_00.png)
+![perceptually uniform colormaps](https://matplotlib.org/3.0.0/_images/sphx_glr_colormaps_008.png)
 
 ![more common colormaps](images/misc_colormaps_from_matplotlib.png)
 
